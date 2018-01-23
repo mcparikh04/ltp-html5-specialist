@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Forms</title>
+    <style>
+    #bio
+        {
+           width:100px;
+           height:100px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>My Form</h1>
+        <form action="#" method="post">
+            <label for="first"><b>First</b></label>
+            <input type="text" id="first" name="first" required="required"/><br/>
+            <label for="last"><b>Last</b></label>
+            <input type="text" id="last" name="last" maxlength="25" autocomplete="off"/><br/>
+            <label for="last"><b>Email</b></label>
+            <input type="text" id="email" name="email" /><br/>
+            <label id="cuisines"><b>Cuisines You Like</b></label><br/>
+            <input type="checkbox" name="cuisines" value="Indian">Indian<br/>
+            <input type="checkbox" name="cuisines" value="Chinese">Chinese<br/>
+            <input type="checkbox" name="cuisines" value="Italian">Italian<br/>
+            <input type="checkbox" name="cuisines" value="Mexican">Mexican<br/>
+            <input type="checkbox" name="cuisines" value="Thai">Thai<br/>
+            <label id="gender"><b>Gender</b></label><br/>
+            <input type="radio" name="gender" value="male">Male<br/>
+            <input type="radio" name="gender" value="male">Female<br/>
+            <label id="state"><b>State</b></label>
+            <select id="state" name="state" size="5" multiple="multiple">
+            <option value="Connecticut">Connecticut</option>
+            <option value="Maine">Maine</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New York">New York</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Maryland">Maryland</option>
+            </select>
+        </form>
+    </body>
+</html>

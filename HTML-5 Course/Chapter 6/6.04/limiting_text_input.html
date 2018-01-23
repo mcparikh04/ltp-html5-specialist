@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Forms</title>
+    <style>
+    #bio
+        {
+           width:100px;
+           height:100px;
+        }
+    </style>
+    </head>
+    <body> 
+        <h1>My Form</h1>
+        <form action="#" method="post">
+            <label for="first">First</label>
+            <input type="text" id="first" name="first" required="required"/><br/>
+            <label for="last">Last</label>
+            <input type="text" id="last" name="last" /><br/>
+            <label for="last">Email</label>
+            <input type="text" id="email" name="email" /><br/>
+            <label for="last">Phone</label>
+            <input type="text" id="phone" placeholder="Phone" maxlength="10" autocomplete="off"/><br/>
+            <label for="bio">Biography</label><br/>
+            <textarea id="bio">Type your biography here.</textarea><br/>
+            <label for="sport">Favorite Sport</label>
+            <input id="sports" placeholder="Favorite Sport" list="mySports" />
+            <datalist id="mySports">
+                <option value="Soccer" />
+                <option value="Basketball" />
+                <option value="Tennis" />
+                <option value="Squash" />
+                <option value="Raquetball" />
+                <option value="Swmming" />
+                <option value="Water Polo" />
+                <option value="Cricket" />
+            </datalist>  
+        </form>
+    </body>
+</html>
